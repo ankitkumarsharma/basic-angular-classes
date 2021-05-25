@@ -8,6 +8,13 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { Day6ParentComponent } from './day6/@input/day6-parent/day6-parent.component';
+import { Day6ChildComponent } from './day6/@input/day6-child/day6-child.component';
+import { Day6ParentOutputComponent } from './day6/@Output/day6-parent-output/day6-parent-output.component';
+import { Day6ChildOutputComponent } from './day6/@Output/day6-child-output/day6-child-output.component';
+import { Day6ChildViewComponent } from './day6/@viewchild/day6-child-view/day6-child-view.component';
+import { Day6ParentViewComponent } from './day6/@viewchild/day6-parent-view/day6-parent-view.component';
+import { DayComponent } from './day/day/day.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +22,14 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    Day6ParentComponent,
+    Day6ChildComponent,
+    Day6ParentOutputComponent,
+    Day6ChildOutputComponent,
+    Day6ChildViewComponent,
+    Day6ParentViewComponent,
+    DayComponent
   ],
   imports: [
     BrowserModule,
