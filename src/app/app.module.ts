@@ -15,6 +15,7 @@ import { Day6ChildOutputComponent } from './day6/@Output/day6-child-output/day6-
 import { Day6ChildViewComponent } from './day6/@viewchild/day6-child-view/day6-child-view.component';
 import { Day6ParentViewComponent } from './day6/@viewchild/day6-parent-view/day6-parent-view.component';
 import { DayComponent } from './day/day/day.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DayComponent } from './day/day/day.component';
     Day6ChildOutputComponent,
     Day6ChildViewComponent,
     Day6ParentViewComponent,
-    DayComponent
+    DayComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

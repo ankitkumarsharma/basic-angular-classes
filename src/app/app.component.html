@@ -1,4 +1,25 @@
-<router-outlet></router-outlet>
-<ul class="list-inline">
-    <li></li>
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-inline">
+                <li>
+                    <a [routerLink]="['/day']" routerLinkActive="router-link-active" >Home</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/input']" routerLinkActive="router-link-active" >Input</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/output']" routerLinkActive="router-link-active" >Output</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/viewchild','12']" routerLinkActive="router-link-active" >ViewChild</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/list']" routerLinkActive="router-link-active" >List Module</a>
+                </li>
+            </ul>
+            <router-outlet></router-outlet>
+            
+        </div>
+    </div>
+</div>
