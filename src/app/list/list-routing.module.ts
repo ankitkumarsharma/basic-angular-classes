@@ -8,7 +8,7 @@ import { Cus3Component } from './cus3/cus3.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
-  {path: 'customer', component: CustomerComponent,
+  {path: 'customer',
   children: [
     {path: '', pathMatch:'full', redirectTo:'cus1'},
     {path: 'cus1', component: Cus1Component},
