@@ -16,6 +16,7 @@ import { Day6ChildViewComponent } from './day6/@viewchild/day6-child-view/day6-c
 import { Day6ParentViewComponent } from './day6/@viewchild/day6-parent-view/day6-parent-view.component';
 import { DayComponent } from './day/day/day.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     Day6ChildViewComponent,
     Day6ParentViewComponent,
     DayComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <ul class="list-inline">
+            <ul class="list-inline" *ngIf="loginFlag">
                 <li>
                     <a [routerLink]="['/day']" routerLinkActive="router-link-active" >Home</a>
                 </li>
@@ -16,6 +16,9 @@
                 </li>
                 <li>
                     <a [routerLink]="['/list']" routerLinkActive="router-link-active" >List Module</a>
+                </li>
+                <li>
+                    <button (click)="onSignout()">Signout</button>
                 </li>
             </ul>
             <router-outlet></router-outlet>
