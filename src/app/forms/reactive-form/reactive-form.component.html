@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-6">
+        <form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="">Name</label>
+                <input formControlName="name" class="form-control" type="text">
+                <div class="error" *ngIf="fc.name.errors">
+                    This field is required
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input formControlName="pwd" class="form-control" type="text">
+                <div class="error" *ngIf="fc.pwd.errors">
+                    <div class="error" *ngIf="fc.pwd.errors?.required">
+                        This field is required
+                    </div>
+                    <div class="error" *ngIf="fc.pwd.errors?.pattern">
+                        Only Numbers required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input formControlName="email" class="form-control" type="email">
+                <div *ngIf="fc.email.errors">
+                    <div class="error" *ngIf="fc.email.errors?.required">
+                        This field is required
+                    </div>
+                    <div class="error" *ngIf="fc.email.errors?.email">
+                        Email format is not correct
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">City</label>
+                <input formControlName="city" class="form-control" type="text">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <button type="button" (click)="setValue()">Click</button>
+    </div>
+</div>

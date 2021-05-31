@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Day6ParentComponent } from './day6/@input/day6-parent/day6-parent.component';
 import { Day6ChildComponent } from './day6/@input/day6-child/day6-child.component';
 import { Day6ParentOutputComponent } from './day6/@Output/day6-parent-output/day6-parent-output.component';
@@ -17,6 +17,7 @@ import { Day6ParentViewComponent } from './day6/@viewchild/day6-parent-view/day6
 import { DayComponent } from './day/day/day.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginComponent } from './auth/login/login.component';
+import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +34,14 @@ import { LoginComponent } from './auth/login/login.component';
     Day6ParentViewComponent,
     DayComponent,
     PageNotFoundComponent,
-    LoginComponent
+    LoginComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
