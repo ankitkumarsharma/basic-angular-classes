@@ -1,3 +1,4 @@
+import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { LoginComponent } from './auth/login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'list', loadChildren: () => import('./list/list.module').then(m => m.ListModule) },
   {path: 'login', component: LoginComponent},
   {path: 'reactive-forms', component: ReactiveFormComponent},
+  {path: 'template-forms', component: TemplateFormComponent},
 
   {path: '**', component: PageNotFoundComponent} // page not found
 ];

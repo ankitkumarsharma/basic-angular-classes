@@ -18,6 +18,7 @@ import { DayComponent } from './day/day/day.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
+import { TemplateFormComponent } from './forms/template-form/template-form.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +36,15 @@ import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.compo
     DayComponent,
     PageNotFoundComponent,
     LoginComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
