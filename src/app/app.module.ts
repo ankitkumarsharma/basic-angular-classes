@@ -19,6 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LoginComponent } from './auth/login/login.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { PipesInfoComponent } from './pipes-info/pipes-info.component';
+import { FileSizePipe } from './pipes-info/fileSize-pipe/file-size.pipe'; 
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { TemplateFormComponent } from './forms/template-form/template-form.compo
     PageNotFoundComponent,
     LoginComponent,
     ReactiveFormComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    PipesInfoComponent,
+    FileSizePipe, 
   ],
   imports: [
     BrowserModule,

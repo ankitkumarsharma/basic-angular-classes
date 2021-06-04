@@ -1,3 +1,4 @@
+import { PipesInfoComponent } from './pipes-info/pipes-info.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'reactive-forms', component: ReactiveFormComponent},
   {path: 'template-forms', component: TemplateFormComponent},
+  {path: 'pipes', component: PipesInfoComponent},
 
   {path: '**', component: PageNotFoundComponent} // page not found
 ];
