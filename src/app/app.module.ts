@@ -21,6 +21,9 @@ import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.compo
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { PipesInfoComponent } from './pipes-info/pipes-info.component';
 import { FileSizePipe } from './pipes-info/fileSize-pipe/file-size.pipe'; 
+import { HttpClientModule } from '@angular/common/http';
+import { ServiceBasedComponent } from './service-based/service-based.component';
+
 
 @NgModule({
   declarations: [
@@ -41,14 +44,16 @@ import { FileSizePipe } from './pipes-info/fileSize-pipe/file-size.pipe';
     ReactiveFormComponent,
     TemplateFormComponent,
     PipesInfoComponent,
-    FileSizePipe, 
+    FileSizePipe,
+    ServiceBasedComponent, 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { ServiceBasedComponent } from './service-based/service-based.component';
 import { PipesInfoComponent } from './pipes-info/pipes-info.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'reactive-forms', component: ReactiveFormComponent},
   {path: 'template-forms', component: TemplateFormComponent},
   {path: 'pipes', component: PipesInfoComponent},
+  {path: 'service-based', component: ServiceBasedComponent},
 
   {path: '**', component: PageNotFoundComponent} // page not found
 ];

@@ -1,0 +1,17 @@
+<p>service-based works!</p>
+{{dummyData}}
+<br>
+<button class="btn" (click)="showData()">Show Data</button>
+<button class="btn" (click)="postData()">Post Data</button>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Completed</td>
+    </tr>
+    <tr *ngFor="let item of serviceData">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.completed}}</td>
+    </tr>
+</table>
