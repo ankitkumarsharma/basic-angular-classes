@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ARRAY_SAMPLE } from 'src/app/core/app.constant';
 
 @Component({
@@ -6,7 +6,7 @@ import { ARRAY_SAMPLE } from 'src/app/core/app.constant';
   templateUrl: './day.component.html',
   styleUrls: ['./day.component.scss']
 })
-export class DayComponent {
+export class DayComponent implements OnInit, OnDestroy {
   fullInfo:User = {
     name: 'aaaa',
     age: 23,
@@ -15,6 +15,16 @@ export class DayComponent {
   show:boolean = true;
   arr = ARRAY_SAMPLE;
   para_no = 20;
+  changeValue:any;
+  ngOnInit(){
+    sessionStorage.setItem('name','ankit');
+  }
+  ngOnDestroy(){
+    sessionStorage.removeItem("name");
+  }
+  onChange(e:any){
+     this.changeValue = e.target.value;
+  }
 }
 export interface User {
   name: string,

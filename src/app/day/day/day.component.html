@@ -44,5 +44,8 @@
 
 <p style="color: blue">aaaa</p> <!--inline css-->
          
-        
+<select name="" id="" (change)="onChange($event)">
+    <option *ngFor="let item of arr" [value]="item.id">{{item.title}}</option>
+</select> 
+<p>{{changeValue}}</p>
     
